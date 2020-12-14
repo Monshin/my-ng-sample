@@ -1,0 +1,15 @@
+<div id="toolbar" class="flex-center">
+  <div class="flex-grow-1">
+    <a class="btn-simple link-underline-none" routerLink="/" [title]="title">
+      <span>{{ title }}</span>
+    </a>
+  </div>
+  <div *ngIf="isLogin">
+    <a
+      class="btn-simple link-underline-none"
+      routerLink="/account"
+      routerLinkActive="active"
+      >個人帳戶</a
+    >
+  </div>
+</div>
