@@ -1,0 +1,91 @@
+button,
+a.btn,
+.btn-simple {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: inherit;
+  background: none;
+  font-size: inherit;
+  outline: 0;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.btn-hover {
+  cursor: pointer;
+}
+
+button {
+  .icon,
+  .icon2 {
+    margin-right: 5px;
+
+    .only-icon {
+      margin-right: 0;
+    }
+  }
+}
+
+.btn-icon {
+  padding: 8px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  .icon {
+    margin-right: 0;
+  }
+}
+
+.btn-icon-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 1;
+}
+
+.btn {
+  min-width: 88px;
+  min-height: 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-size: 1.14285714286rem;
+  font-weight: 500;
+
+  &.btn-cancel {
+    background-color: #4a4a4a;
+    color: #ffffff;
+  }
+
+  &.btn-submit,
+  &.btn-confirm,
+  &.btn-primary {
+    background-color: #8e56d5;
+    color: #ffffff;
+
+    &:disabled {
+      background-color: #bfa4e1;
+    }
+  }
+
+  & + & {
+    margin-left: 15px;
+  }
+
+  &.btn-cancel:hover,
+  &.btn-submit:hover,
+  &.btn-primary:hover,
+  &.btnSetting:hover,
+  &.btnConfirm:hover,
+  &.btnCancel:hover {
+    opacity: 0.8;
+  }
+}
+
+.btn-hover:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}

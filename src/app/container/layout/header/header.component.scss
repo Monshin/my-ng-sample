@@ -1,0 +1,29 @@
+@import "/src/style/theme.scss";
+
+:host {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $zIndex-appBar;
+  background-color: #9b9b9b;
+  box-sizing: border-box;
+  padding: 0 8px;
+
+  &.zindex1 {
+    z-index: $zIndex-appBar + 1;
+  }
+
+  &.zindex2 {
+    z-index: $zIndex-appBar + 2;
+  }
+
+  #toolbar {
+    width: 100%;
+    position: relative;
+    max-width: $width-pageMax;
+    height: $height-appBar;
+    margin: auto;
+    overflow: hidden;
+  }
+}
